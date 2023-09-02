@@ -3,6 +3,7 @@ import type { Handler } from '@netlify/functions';
 import { parse } from 'querystring';
 import { blocks, modal, slackApi, verifySlackRequest } from './util/slack';
 import { saveItem } from './util/notion';
+// getting started
 
 async function handleSlashCommand(payload: SlackSlashCommandPayload) {
 	switch (payload.command) {
